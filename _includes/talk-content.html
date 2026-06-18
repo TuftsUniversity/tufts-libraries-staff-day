@@ -1,0 +1,20 @@
+<div class="content">
+  <span class="type">{{ talk.type }}</span>
+  <span class="time">{{ talk.time }}</span>
+  {% if talk.type != 'lightning talks' %}
+    <h3 class="title">{{ talk.title }}</h3>
+  {% endif %}
+    <span class="pres">{{talk.presenter}}</span>
+   {% if talk.description %}
+   <div class="descrip">{{ talk.description }}</div>
+    {% endif %}
+    {% if talk.type == 'lightning talks' %} 
+       {% for lt in talk.ltalks %}
+       <div class="lt">
+         <span class="lt-title">{{ lt.ltitle }}</span>
+        <span class="pres"> {{ lt.lpresenter }}</span>
+        </div>
+       {% endfor %}
+    {% endif %}
+  
+</div>

@@ -6,7 +6,33 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-
+            
+              <div class="one">
+                <h2>Room One</h2>
+                 {% for talk in site.data.talks %}
+                  {% if talk.room == "one" %}
+                    {% include talk-content.html %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="two">
+                 <h2>Room Two</h2>
+                 {% for talk in site.data.talks %}
+                  {% if talk.room == "two" %}
+                    {% include talk-content.html %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="three">
+                 <h2>Room Three</h2>
+                {% for talk in site.data.talks %}
+                  {% if talk.room == "three" %}
+                    {% include talk-content.html %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+             
+            
             {% if site.section_title != '' %}
             <h2 class="section-title text-center">{{ site.section_title }}</h2>
             {% endif %}
