@@ -1,0 +1,20 @@
+services:
+  jekyll:
+    build: .
+    container_name: phantom-jekyll
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      # Mount the repo root to /site — must match WORKDIR in Dockerfile
+      - .:/site
+      - bundle_cache:/gems
+    working_dir: /site
+    environment:
+      - JEKYLL_ENV=development
+      - RUBYOPT=-W0
+      - BUNDLE_PATH=/gems
+    restart: unless-stopped
+
+volumes:
+  bundle_cache:
