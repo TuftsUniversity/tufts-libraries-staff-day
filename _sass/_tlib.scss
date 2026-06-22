@@ -1,6 +1,28 @@
 .container{
     width: 100vw;
-    box-shadow: inset 33.33vw 0px 0px #c8d5e2, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #f0e4df;
+    box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
+}
+.navbar{
+  background-color: black;
+  color: white;
+  a{
+    color: white;
+  }
+}
+.navbar-default .navbar-nav > li > a, 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:visited{
+  color: white;
+
+}
+
+#overview, #details, .sd-head{
+  padding-top: 5em;
+}
+
+.time-slot:not(h3){
+  font-style: italic;
 }
 .sd-container{
     max-width: 1800px;
@@ -11,7 +33,9 @@
       display: grid;
       grid-template-columns: repeat(3, 33%);
     }
-    
+    .summary p{
+        font-style: italic;
+    }
     .col{
       padding: 1em 1.5em;
     }
@@ -24,4 +48,28 @@
     .three{ 
       //background-color: #f0e4df
     }
+}
+img{
+  border-radius: 0.25em;
+  margin-right: auto;
+  margin-left: auto;
+}
+caption{
+  font-size: smaller;
+  padding: 0.25em 0.5em;
+}
+div[class$="talk-content"]{
+  background-color: #91b2d3;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+[class*="start-11"] {
+  grid-row: 1;
+}
+[class*="start-11:30"] {
+  grid-row: 2;
+}
+[class*="start-12:00"] {
+  grid-row: 3;
 }

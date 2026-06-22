@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Library Staff Day"
+title: "Library Staff Day 2026"
 email: 'kate.bronstad@tufts.edu'
-description: "Summer gathering: meeting each other"
+description: "Summer gathering: meet, reunite, learn, share"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jamigibbs.github.io/phantom" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
+twitter_username: ''
+github_username: ''
+medium_username: ''
 
 # Build settings
 markdown: kramdown
@@ -100,5 +100,6 @@ enable_contact: false
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
+  - { url: '/', text: 'Top' }
+  - { url: '#overview', text: 'Day Schedule' }
+  - { url: '#details', text: 'Talk Details' }

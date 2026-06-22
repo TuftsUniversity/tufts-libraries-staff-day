@@ -1,0 +1,20 @@
+---
+- time: ' 10:00 - 10:15'
+  description: "Welcome <br/> Ann, Jess and Planning Team"
+- time: '10:15 - 10:45' 
+  description: "Ice breakers"
+- time: '10:45 - 11:00' 
+  description: "-BREAK-"
+- time: '11:00 - 12:30' 
+  description: "Lightening Talks, Presentations and Workshops" 
+- time: '12:30 - 1:30' 
+  description: "Lunch"  
+- time: '1:30 - 2:30' 
+  description: "Birds of a feather Table Topics"
+- time: '2:30 - 2:45'
+  description: "Closing Remarks"        
+- time: '2:45 - 3:00'
+  description: "Group photo & Ice cream"      
+
+
+ 

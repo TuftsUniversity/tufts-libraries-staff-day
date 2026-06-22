@@ -1,27 +1,48 @@
 {% include header.html %}
 
-    {% include home-hero.html %}
-<div class="sd-container">
-<div class="col one">
-  Full Program
-</div>
-<div class="col two">
+    {% if site.title != '' %}
+    <div class="sd-head">
+          <h1 class="text-center stitle">{{site.title}}</h1>
+          {% endif %}
+
+          {% if site.description != '' or site.enable_contact == true %}
+          <p class="text-center">
+            {% if site.description != '' %}
+            {{site.description}}
+            {% endif %}
+
+          </p>
+          {% endif %}
+      </div>    
+<div id="overview" class="sd-container">
+  <div class="col one">
+    <h4>Full Schedule</h4>
+    {% for sc in site.data.sched %}
+     <h4>{{ sc.time}}</h4> 
+     <p>{{ sc.description }}</p>
+   {% endfor %}
+  </div>
+  <div class="col two">
+    <h4>Map + QR Code</h4>
   Map + QR Code
 </div>
 <div class="col three">
-  image here
-  Tufts University libraries staff day
-  Wednesday, July 15, 2026
-Joyce Cummings Center
-Medford/Somerville campus
+ 
+  <img src="img/historical_lib_staff.jpg" alt="Tufts library staff from 1924" />
+  <caption>The library staff, including Blanche H. Hooper, Ethel M. Hayes, and two unidentified women, September 11,
+tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</caption>
 </div>
 </div>
-    <main id="portfolio">
-      <div class="sd-container">
+<a class="section-jump text-center" href="#details">
+        <i class="fa fa-angle-down fa-3x"></i>
+      </a>
+    <main id="details">
+      <div class="sd-container details">
 
             
               <div class="col one">
                 <h2>Room One</h2>
+                <div class="room">Room #</div>
                  {% for talk in site.data.talks %}
                   {% if talk.room == "one" %}
                     {% include talk-content.html %}
@@ -30,6 +51,7 @@ Medford/Somerville campus
               </div>
               <div class="col two">
                  <h2>Room Two</h2>
+                 <div class="room">Room #</div>
                  {% for talk in site.data.talks %}
                   {% if talk.room == "two" %}
                     {% include talk-content.html %}
@@ -38,6 +60,7 @@ Medford/Somerville campus
               </div>
               <div class="col three">
                  <h2>Room Three</h2>
+                 <div class="room">Room #</div>
                 {% for talk in site.data.talks %}
                   {% if talk.room == "three" %}
                     {% include talk-content.html %}

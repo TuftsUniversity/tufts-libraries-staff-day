@@ -1,4 +1,5 @@
-<div class="content">
+{% assign talkclass = talk.time | split: " " | first | remove: "pm" | remove: "am" | prepend: "start-" | append: "-talk-content"  %}
+  <div class={{talkclass}}>
   <span class="type">{{ talk.type }}</span>
   <span class="time">{{ talk.time }}</span>
   {% if talk.type != 'lightning talks' %}
