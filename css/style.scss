@@ -15,6 +15,7 @@
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
+@import '../_sass/tlib';
 
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
@@ -28,7 +29,7 @@ $secondary: #FF7B7B;
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    //width: 1200px;
   }
 }
 

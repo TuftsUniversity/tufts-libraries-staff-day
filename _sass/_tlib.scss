@@ -1,0 +1,27 @@
+.container{
+    width: 100vw;
+    box-shadow: inset 33.33vw 0px 0px #c8d5e2, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #f0e4df;
+}
+.sd-container{
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1em;
+    @media all and (min-width: 900px){
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+    }
+    
+    .col{
+      padding: 1em 1.5em;
+    }
+    .one{
+      //background-color: #c8d5e2;
+    }
+    .two{
+      //background-color: #fbfaf4
+    }
+    .three{ 
+      //background-color: #f0e4df
+    }
+}
