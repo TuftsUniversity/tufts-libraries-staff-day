@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Tufts University Librararies Staff Day 2026"
+title: "Tufts University Libraries Staff Day 2026"
 email: 'kate.bronstad@tufts.edu'
 description: "Wednesday July 15, 2026<br>Joyce Cummings Center<br/>Medford/Somerville Campus"
 baseurl: "" # the subpath of your site, e.g. /blog
