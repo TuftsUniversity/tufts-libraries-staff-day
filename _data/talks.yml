@@ -5,23 +5,29 @@
   presenter: Nick Homenda
   time: '11:00am - 12:00pm'
   room: one
+- title: 'continued: Build a Free, Functional Website Using Github Pages'
+  room: one
+  time: "11:30am - 12:00pm"  
 - title: 'The Tisch Inventory Pilot: Development, Launch, and Results' 
   description: 'In Fall 2025, Access Services began an inventory pilot using an API that works with Alma to provide real-time status information about Tisch stacks. This presentation will summarize how the pilot came to be, its launch, and its results.'
   type: presentation
   presenter: Sarah Towne, Tisch Library
   time: '11:00am - 11:30am'
+  time_start: "11am"
   room: two
 - title: 'Envisioning Futures: Zinemaking & Oral History Workshops'
   description: 'Join us to hear how we are using oral history and zine-making workshops to foster community, boost mental health, and connect people with tools to record their experiences for posterity. We hope to gain collaborators to help us make this a multi-campus project!'
   type: presentation
   presenter: Gabby Womack and Joanna Gray, Tisch Library
   time: '11:00am - 12:30pm'
+  time_start: "11am"
   room: three
 - title: 'Lightning talk'
   description: ''
   type: 'lightning talks'
   room: one
   time: "12:00pm - 12:30pm"
+  time_start: "12pm"
   ltalks: 
       - ltitle: Supporting library staff in generating meaingful insights with data
       - lpresenter:  "Heather Klish and Kate Bronstad, LTS"
@@ -33,6 +39,7 @@
   type: 'lightning talks'
   room: two
   time: "11:30am - 12:00pm"
+  time_start: "11:30"
   ltalks: 
       - ltitle: Launching a Digital Scholarship Portfolio
       - lpresenter:  "Anna Kijas, Tisch Library"
@@ -41,12 +48,13 @@
       - lpresenter: "Hayley Curtis, Tisch library" 
 
       - ltitle: Teaching with Special Collections through the Ex-College   
-      - lpresenter: Christopher Barbour, Elettra Conoly, Tisch Library" 
+      - lpresenter: Christopher Barbour, Elettra Conoly, Tisch Library
 - title: 'Lightning talk'
   description: ''
   type: 'lightning talks'
   room: two
   time: "12:00pm - 12:30pm"
+  time_start: "12"
   ltalks: 
       - ltitle: "Reading is Healing: Bibliotherapy for Medical Students"
       - lpresenter:  "Amy LaVertu, Hirsch library"
@@ -60,7 +68,8 @@
   description: ''
   type: 'lightning talks'
   room: three
-  time: "11:00am - 11:30am"
+  time: "11:30am - 12pm"
+  time_start: "11:30am"
   ltalks: 
       - ltitle: "EN3: Information Literacy Instruction for All First-Year Engineering Students"
       - lpresenter:  "David Fristrom, Tisch Library"
@@ -75,6 +84,7 @@
   type: presentation
   presenter: Kate McNally, Hayley Mercer, TARC
   time: '12:00pm - 12:30am'
+  time_start: "12pm"
   room: three
 
 

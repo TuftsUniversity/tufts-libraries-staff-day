@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Library Staff Day 2026"
+title: "Tufts University Librararies Staff Day 2026"
 email: 'kate.bronstad@tufts.edu'
-description: "Summer gathering: meet, reunite, learn, share"
+description: "Wednesday July 15, 2026<br>Joyce Cummings Center<br/>Medford/Somerville Campus"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jamigibbs.github.io/phantom" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
@@ -92,7 +92,7 @@ pagination:
 ############################################################
 
 ### Phantom settings
-footer_text: '© 2026 Tufts libraries'
+footer_text: '2026 Tufts Libraries Staff Day Team'
 admin_name: 'kate'
 google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: false
@@ -102,4 +102,4 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Top' }
   - { url: '#overview', text: 'Day Schedule' }
-  - { url: '#details', text: 'Talk Details' }
+  - { url: '#talk-details', text: 'Talk Details' }

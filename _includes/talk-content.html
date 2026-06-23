@@ -3,7 +3,7 @@
   <span class="type">{{ talk.type }}</span>
   <span class="time">{{ talk.time }}</span>
   {% if talk.type != 'lightning talks' %}
-    <h3 class="title">{{ talk.title }}</h3>
+    <h4 class="title">{{ talk.title }}</h4>
   {% endif %}
     <span class="pres">{{talk.presenter}}</span>
    {% if talk.description %}
@@ -11,10 +11,10 @@
     {% endif %}
     {% if talk.type == 'lightning talks' %} 
        {% for lt in talk.ltalks %}
-       <div class="lt">
          <span class="lt-title">{{ lt.ltitle }}</span>
+         {% if lt.lpresenter %}
         <span class="pres"> {{ lt.lpresenter }}</span>
-        </div>
+        {% endif %}
        {% endfor %}
     {% endif %}
   

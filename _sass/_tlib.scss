@@ -1,6 +1,13 @@
+$din: "din-2014", sans-serif;
+$header-serif: "itc-giovanni", serif;
+
 .container{
     width: 100vw;
     box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
+    overflow-x: hidden; 
+}
+html, body{
+    overflow-x: hidden; 
 }
 .navbar{
   background-color: black;
@@ -17,13 +24,42 @@
 
 }
 
-#overview, #details, .sd-head{
+#overview, .sd-head{
   padding-top: 5em;
 }
+#overview{
+    h2{
+      width: 80%;
+      border-bottom: 1px solid black;
+    }
+     p{
+      font-style: italic;
+    }
+  
+}
+
 
 .time-slot:not(h3){
   font-style: italic;
 }
+h1.stitle, .site-descrip{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 0.5em 1em;
+  font-family: $header-serif;
+  @media all and (min-width: 960px){
+    width: 50%;
+  }
+}
+h2{
+  font-family: $header-serif;
+}
+.site-descrip{
+  margin-top: -1em;
+  line-height: 1.4;
+}
+
 .sd-container{
     max-width: 1800px;
     margin-right: auto;
@@ -32,44 +68,107 @@
     @media all and (min-width: 900px){
       display: grid;
       grid-template-columns: repeat(3, 33%);
+      column-gap: 1em;
     }
-    .summary p{
-        font-style: italic;
-    }
-    .col{
-      padding: 1em 1.5em;
-    }
-    .one{
-      //background-color: #c8d5e2;
-    }
-    .two{
-      //background-color: #fbfaf4
-    }
-    .three{ 
-      //background-color: #f0e4df
-    }
+    font-family: $din;
 }
 img{
   border-radius: 0.25em;
+  max-width: 300px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-}
-caption{
-  font-size: smaller;
-  padding: 0.25em 0.5em;
-}
-div[class$="talk-content"]{
-  background-color: #91b2d3;
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
   margin-bottom: 1em;
 }
-[class*="start-11"] {
-  grid-row: 1;
+figure{
+ width: 300px;
+  margin-top: 5em;
 }
-[class*="start-11:30"] {
-  grid-row: 2;
+figcaption{
+  font-size: smaller;
+  width: 300px;
+  padding: 0.25em 0.5em;
 }
-[class*="start-12:00"] {
-  grid-row: 3;
+
+
+#talk-details{
+   max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1em;
+    h2{
+      background-color: white;
+      width: 50%;
+      padding: 0.5em 1em;
+    }
+    table{
+      width: 98%;
+      
+       border-collapse: separate; /* Required for spacing to work */
+       border-spacing: 30px 5px;  
+       caption{
+        visibility: hidden;
+       }
+    }
+    
+    th{
+      width: 28%;
+      padding-left: 1em;
+      margin-right: 2em;
+      h3{
+        border-bottom: 1px solid black;
+      }
+    }
+    th:nth-of-type(2){
+      width: 33%;
+    }
+    th:nth-of-type(3){
+      padding-left: 2em;
+    }
+    td{
+      vertical-align: top;
+    }
+    .talk-block{
+        background-color: #91b2d3;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+    }
+    tr{
+      margin-left: 0.5em;
+      //margin-right: 2em;
+    }
+    td.time{
+      padding-left: 1em;
+      //padding-right: 0.5em;
+    }
+    h4.title{
+      font-size: 1.15em;
+      font-weight: bold;
+      font-family: $din;
+    }
+    .lt-title{
+      font-weight: bold;
+    }
+    .pres{
+      display: block;
+      font-style: italic;
+      margin-bottom: 1em;
+    }
+    .lt-title{
+     font-weight: bold;
+
+    }
+    .type{
+      display: block;
+      font-style: italic;
+    }
+    
+  
 }
+footer{
+      background-color: #222;
+      .row{
+         background-color: #222;
+      }
+    }

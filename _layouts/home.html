@@ -6,7 +6,7 @@
           {% endif %}
 
           {% if site.description != '' or site.enable_contact == true %}
-          <p class="text-center">
+          <p class="text-center site-descrip">
             {% if site.description != '' %}
             {{site.description}}
             {% endif %}
@@ -16,59 +16,48 @@
       </div>    
 <div id="overview" class="sd-container">
   <div class="col one">
-    <h4>Full Schedule</h4>
+    <h2>Full Schedule</h2>
     {% for sc in site.data.sched %}
-     <h4>{{ sc.time}}</h4> 
+     <h3>{{ sc.time}}</h3> 
      <p>{{ sc.description }}</p>
    {% endfor %}
   </div>
   <div class="col two">
-    <h4>Map + QR Code</h4>
+    <h2>Map + QR Code</h2>
   Map + QR Code
 </div>
 <div class="col three">
- 
+ <figure>
   <img src="img/historical_lib_staff.jpg" alt="Tufts library staff from 1924" />
-  <caption>The library staff, including Blanche H. Hooper, Ethel M. Hayes, and two unidentified women, September 11,
-tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</caption>
+  <figcaption>The library staff, including Blanche H. Hooper, Ethel M. Hayes, and two unidentified women, September 11,
+tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</figcaption>
+</figure>
 </div>
 </div>
-<a class="section-jump text-center" href="#details">
+<a class="section-jump text-center" href="#talk-details">
         <i class="fa fa-angle-down fa-3x"></i>
       </a>
-    <main id="details">
-      <div class="sd-container details">
+    <main id="talk-details">
+      <h2>Workshop, Presentations, and Lightning Talks</h2>
+      <table class="talk">
+        <caption style="display: visually-hidden;">Talk details</caption>
+        <thead>
 
-            
-              <div class="col one">
-                <h2>Room One</h2>
-                <div class="room">Room #</div>
-                 {% for talk in site.data.talks %}
-                  {% if talk.room == "one" %}
-                    {% include talk-content.html %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-              <div class="col two">
-                 <h2>Room Two</h2>
-                 <div class="room">Room #</div>
-                 {% for talk in site.data.talks %}
-                  {% if talk.room == "two" %}
-                    {% include talk-content.html %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-              <div class="col three">
-                 <h2>Room Three</h2>
-                 <div class="room">Room #</div>
-                {% for talk in site.data.talks %}
-                  {% if talk.room == "three" %}
-                    {% include talk-content.html %}
-                  {% endif %}
-                {% endfor %}
-              </div>
+        <th colspan="2"><h3>Room 1</h3></th>
+        <th colspan="2"><h3>Room 2</h3></th>
+        <th colspan="2"><h3>Room 3</h3></th>
 
-      </div>
+    </thead>
+           {% assign start_time = "11:00am" %}
+           {% include talk-row.html start=start_time %} 
+
+           {% assign start_time = "11:30am" %}
+           {% include talk-row.html start=start_time %} 
+
+           {% assign start_time = "12:00pm" %}
+           {% include talk-row.html start=start_time %} 
+
+            </table>
     </main>
 
 {% include footer.html %}
