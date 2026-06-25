@@ -4,11 +4,12 @@ $header-serif: "itc-giovanni", serif;
 .container{
     width: 100vw;
     //box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    //@media all and (min-width: 1600px){
-      //box-shadow: inset 33vw 0px 0px #f0e4df, inset 60vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    //}
-       background-image: url('../img/historical_lib_staff.jpg');
+    @media all and (min-width: 1600px){
+    //box-shadow: inset 33vw 0px 0px #f0e4df, inset 60vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
+    }
+      
    background-repeat: no-repeat;
+   background-size: cover;
     overflow-x: hidden; 
 }
 html, body{
@@ -29,22 +30,39 @@ html, body{
 
 }
 
-#overview, .sd-head{
-  padding-top: 5em;
+.sd-head{
+  padding-top: 4em;
+  //background-image: url("../img/historical_lib_staff.jpg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+
 }
 #overview{
    font-family: $din;
-
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
     h2{
-      width: 80%;
       border-bottom: 1px solid black;
+      text-align: center;
     }
      p{
       font-style: italic;
     }
-  
+    .full-schedule{
+      background-color: white;
+      text-align: center;
+      padding: 1em 2em;
+    }
+    .map{
+      h2{
+        padding: 0 2em;
+      }
+    }
 }
 
 
@@ -74,32 +92,41 @@ img{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 1em;
 }
 figure{
-
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img{
+    
+  }
 }
 figcaption{
   font-size: smaller;
   padding: 0.25em 0.5em;
 }
-
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-serif;
+}
 
 #talk-details{
-   max-width: 1800px;
+   max-width: 1600px;
+   margin-top: 5em;
+   padding-top: 1em;
     margin-right: auto;
     margin-left: auto;
     padding: 0 1em;
+    font-family: $din;
     h2{
-      background-color: white;
-      width: 50%;
-      padding: 0.5em 1em;
+      text-align: center;
+      font-family: $header-serif;
     }
     table{
-      width: 98%;
+      width: 100%;
       @media all and (min-width: 1600px){
-        width: 80%;
-        margin-left: 8em; 
+        //width: 80%;
+        //margin-left: 8em; 
       }
        border-collapse: separate; /* Required for spacing to work */
        border-spacing: 30px 5px;  
@@ -109,7 +136,7 @@ figcaption{
     }
     
     th{
-      width: 28%;
+      width: 30%;
       padding-left: 1em;
       margin-right: 2em;
       h3{
