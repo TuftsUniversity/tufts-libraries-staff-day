@@ -1,0 +1,37 @@
+<div>
+
+    <div class="time">
+      <div class="mobile-title">{{include.start}}</div>
+    </div>
+    <div class="talk-block">
+      {% for talk in site.data.talks %}
+     {% assign time_start = talk.time | split: ' - ' | first %}
+      {% if talk.room == "one" and time_start == {{include.start}} %}
+        {% include talk-content.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
+
+       <div class="time">
+      also at {{ include.start }}
+       </div>
+    <div class="talk-block">
+      {% for talk in site.data.talks %}
+      {% assign time_start = talk.time | split: ' - ' | first %}
+      {% if talk.room == "two" and time_start == {{include.start}} %}
+        {% include talk-content.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  <div class="time third">
+     Also at  {{ include.start }}
+  </div>
+    <div class="third talk-block">
+    {% for talk in site.data.talks %}
+    {% assign time_start = talk.time | split: ' - ' | first %}
+      {% if talk.room == "three" and time_start == {{include.start}}  %}
+        {% include talk-content.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>

@@ -1,7 +1,8 @@
-{% assign talkclass = talk.time | split: " " | first | remove: "pm" | remove: "am" | prepend: "start-" | append: "-talk-content"  %}
-  <div class={{talkclass}}>
+
+  <div class="talk-class">
   <span class="type">{{ talk.type }}</span>
   <span class="time">{{ talk.time }}</span>
+  <span class="room"> Room {{ talk.room }} </span>
   {% if talk.type != 'lightning talks' %}
     <h4 class="title">{{ talk.title }}</h4>
   {% endif %}

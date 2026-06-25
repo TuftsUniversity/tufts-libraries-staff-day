@@ -1,16 +1,20 @@
 $din: "din-2014", sans-serif;
 $header-serif: "itc-giovanni", serif;
 
-.container{
+.sd-row{
     width: 100vw;
-    //box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    @media all and (min-width: 1600px){
-    //box-shadow: inset 33vw 0px 0px #f0e4df, inset 60vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    }
-      
-   background-repeat: no-repeat;
-   background-size: cover;
     overflow-x: hidden; 
+    padding-bottom: 2em;
+}
+.sd-row.blue{
+  background-color: #c8d5e2;
+
+}
+.sd-row.offwhite{
+  background-color: #fbfaf4;
+}
+.sd-row.tan{
+  background-color: #f0e4df;
 }
 html, body{
     overflow-x: hidden; 
@@ -54,7 +58,6 @@ html, body{
       font-style: italic;
     }
     .full-schedule{
-      background-color: white;
       text-align: center;
       padding: 1em 2em;
     }
@@ -72,7 +75,6 @@ html, body{
 h1.stitle, .site-descrip{
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
   padding: 0.5em 1em;
   font-family: $header-serif;
   @media all and (min-width: 960px){
@@ -95,12 +97,12 @@ img{
 }
 figure{
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  img{
-    
-  }
+ 
 }
 figcaption{
   font-size: smaller;
@@ -122,11 +124,25 @@ h1, h2, h3, h4, h5, h6{
       text-align: center;
       font-family: $header-serif;
     }
+    .mobile-talk{
+      @media all and (min-width: 961px){
+        display: none;
+      }
+    }
+    .mobile-title{
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .room{
+      display: block;
+      @media all and (min-width: 960px){
+        display: none;
+      }
+    }
     table{
       width: 100%;
-      @media all and (min-width: 1600px){
-        //width: 80%;
-        //margin-left: 8em; 
+      @media all and (max-width: 960px){
+       display: none;
       }
        border-collapse: separate; /* Required for spacing to work */
        border-spacing: 30px 5px;  
@@ -157,6 +173,7 @@ h1, h2, h3, h4, h5, h6{
         padding: 0.5em 1em;
         border-radius: 0.5em;
         margin-bottom: 1em;
+
     }
     tr{
       margin-left: 0.5em;
@@ -191,9 +208,15 @@ h1, h2, h3, h4, h5, h6{
     
   
 }
-footer{
-      background-color: #222;
-      .row{
-         background-color: #222;
-      }
+.talk-block{
+  @media all and (max-width: 960px){
+    margin-right: 1em;
+  }
+}
+footer.site-footer{
+    background-color: #222;
+    .row{
+        background-color: #222;
     }
+    margin-top: 0;
+  }

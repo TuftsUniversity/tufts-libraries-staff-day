@@ -1,6 +1,7 @@
 {% include header.html %}
 
     {% if site.title != '' %}
+ <div  class="sd-row blue">
     <div class="sd-head">
           <h1 class="text-center stitle">{{site.title}}</h1>
           {% endif %}
@@ -14,13 +15,15 @@
           </p>
           {% endif %}
       </div>    
-<div id="overview">
-
-     <figure>
+      <figure>
   <img src="img/historical_lib_staff.jpg" alt="Tufts library staff from 1924" />
   <figcaption>The library staff, including Blanche H. Hooper, Ethel M. Hayes, and two unidentified women, September 11,
 tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</figcaption>
 </figure>
+
+</div>   
+<div class="sd-row offwhite">
+    <div id="overview">
 <!--<a class="section-jump text-center" href="#talk-details">
         <i class="fa fa-angle-down fa-3x"></i>
       </a>-->
@@ -37,10 +40,17 @@ tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</figcaption>
 </div>
 
 </div>
-
-
+</div> 
+<div class="sd-row tan">
     <main id="talk-details">
       <h2>Workshop, Presentations, and Lightning Talks</h2>
+      <div class="mobile-talk">
+         {% assign ttype = "mobile-talk" %}
+        {% include talk-includes.html type=ttype %}
+        
+
+       
+      </div>
       <table class="talk">
         <caption style="display: visually-hidden;">Talk details</caption>
         <thead>
@@ -50,16 +60,11 @@ tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</figcaption>
         <th colspan="2"><h3>Room 3</h3></th>
 
     </thead>
-           {% assign start_time = "11:00am" %}
-           {% include talk-row.html start=start_time %} 
-
-           {% assign start_time = "11:30am" %}
-           {% include talk-row.html start=start_time %} 
-
-           {% assign start_time = "12:00pm" %}
-           {% include talk-row.html start=start_time %} 
+         {% assign ttype = "talk-row" %}
+        {% include talk-includes.html type=ttype %}
 
             </table>
-    </main>
 
+    </main>
+</div>
 {% include footer.html %}
