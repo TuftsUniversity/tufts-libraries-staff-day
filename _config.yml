@@ -100,7 +100,7 @@ enable_contact: false
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'Top' }
-  - { url: '#overview', text: 'Day Schedule' }
+  - { url: '#top', text: 'Top' }
+  - { url: '#overview', text: 'Full Schedule' }
   - { url: '#talk-details', text: 'Talk Details' }
 
