@@ -15,6 +15,9 @@
          {% if lt.lpresenter %}
         <span class="pres"> {{ lt.lpresenter }}</span>
         {% endif %}
+        {% if lt.ldesc %}
+        <details>{{ lt.ldesc }}</details>
+        {% endif %}
        {% endfor %}
     {% endif %}
   

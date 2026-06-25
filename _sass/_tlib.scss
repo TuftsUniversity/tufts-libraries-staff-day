@@ -3,10 +3,12 @@ $header-serif: "itc-giovanni", serif;
 
 .container{
     width: 100vw;
-    box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    @media all and (min-width: 1600px){
-      box-shadow: inset 33vw 0px 0px #f0e4df, inset 60vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
-    }
+    //box-shadow: inset 33.33vw 0px 0px #f0e4df, inset 66.66vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
+    //@media all and (min-width: 1600px){
+      //box-shadow: inset 33vw 0px 0px #f0e4df, inset 60vw 0px 0px #fbfaf4, inset 99.99vw 0px 0px  #c8d5e2;
+    //}
+       background-image: url('../img/historical_lib_staff.jpg');
+   background-repeat: no-repeat;
     overflow-x: hidden; 
 }
 html, body{
@@ -31,6 +33,10 @@ html, body{
   padding-top: 5em;
 }
 #overview{
+   font-family: $din;
+
+   flex-direction: column;
+   align-items: center;
     h2{
       width: 80%;
       border-bottom: 1px solid black;
@@ -52,7 +58,7 @@ h1.stitle, .site-descrip{
   padding: 0.5em 1em;
   font-family: $header-serif;
   @media all and (min-width: 960px){
-    width: 50%;
+    //width: 50%;
   }
 }
 h2{
@@ -63,33 +69,18 @@ h2{
   line-height: 1.4;
 }
 
-.sd-container{
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 1em;
-    @media all and (min-width: 900px){
-      display: grid;
-      grid-template-columns: repeat(3, 33%);
-      column-gap: 1em;
-    }
-    font-family: $din;
-}
 img{
   border-radius: 0.25em;
-  max-width: 300px;
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1em;
 }
 figure{
- width: 300px;
-  margin-top: 5em;
+
 }
 figcaption{
   font-size: smaller;
-  width: 300px;
   padding: 0.25em 0.5em;
 }
 
@@ -159,11 +150,12 @@ figcaption{
     .pres{
       display: block;
       font-style: italic;
-      margin-bottom: 1em;
     }
     .lt-title{
      font-weight: bold;
-
+    }
+    details{
+      margin-bottom: 1em;
     }
     .type{
       display: block;
