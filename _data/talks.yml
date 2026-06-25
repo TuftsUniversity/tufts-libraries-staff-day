@@ -2,7 +2,7 @@
 - title: 'Build a Free, Functional Website Using GitHub Pages'
   description: "Join this workshop to learn a little about Jekyll, a static site generator that you can use to build websites hosted entirely within a GitHub repository. To participate, please sign up for a GitHub account (www.github.com) and bring your laptop."
   type: workshop
-  presenter: Nick Homenda
+  presenter: Nick Homenda, Tisch Library
   time: '11:00am - 12:00pm'
   room: one
 - title: 'continued: Build a Free, Functional Website Using Github Pages'
@@ -30,10 +30,12 @@
   time_start: "12pm"
   ltalks: 
       - ltitle: Supporting library staff in generating meaingful insights with data
-      - lpresenter:  "Heather Klish and Kate Bronstad, LTFIS"
+      - lpresenter:  "Heather Klish and Kate Bronstad, LTS"
+      - ldesc: 'Heather and Kate from LTFIS will discuss setting up tools and features to empower and support library staff in independently accessing data, generating meaningful insights, and streamlining processes; we’ll highlight several recent projects and share some of our plans for the future.'
 
       - ltitle: Using collection development to refine support of data services
       - lpresenter: "David Fristrom and Cece Lasley, Tisch Library"
+      - ldesc: "An overview of the recent Tisch data collections audit project, an interdisciplinary effort to use collection development as an opportunity to reflect on and refine our support of data services."
 - title: 'Lightning talk'
   description: ''
   type: 'lightning talks'
@@ -43,12 +45,15 @@
   ltalks: 
       - ltitle: Launching a Digital Scholarship Portfolio
       - lpresenter:  "Anna Kijas, Tisch Library"
+      - ldesc: 'This talk will showcase the recently launched public digital scholarship portfolio at Tisch Library that highlights collaborations and support for faculty projects and class assignments that incorporate a range of digital methods, media, or tools (https://tischlibrary.tufts.edu/get-help/help/digital-scholarship/digital-scholarship-portfolio). '
 
       - ltitle: Expanding Digitization at Tisch Library
       - lpresenter: "Hayley Curtis, Tisch library" 
+      - ldesc: "I would like to give a lightning talk about Digital Initiatives' new digitization equipment and our work to expand the range of materials that we are able to digitize -- including artwork, zines, maps, and other oversized or fragile materials. "
 
       - ltitle: Teaching with Special Collections through the Ex-College   
       - lpresenter: Christopher Barbour, Elettra Conoly, Tisch Library
+      - ldesc: 'We will discuss how Special Collections teaches with and about rare books through the ExCollege (with examples of student work).'
 - title: 'Lightning talk'
   description: ''
   type: 'lightning talks'
@@ -58,12 +63,15 @@
   ltalks: 
       - ltitle: "Reading is Healing: Bibliotherapy for Medical Students"
       - lpresenter:  "Amy LaVertu, Hirsch library"
+      - ldesc: "Description of the bibliotherapy intervention Rebecca Morin and I conducted during Covid; I don't believe that we are shared our findings with the larger Tufts library community"
 
       - ltitle: Developing the Library Leaf project
       - lpresenter: "Anna Milyaeva, Hirsch library" 
+      - ldesc: "This session will detail the Library Leaf Project initiative at Tufts Hirsh Health Sciences Library; the Library Leaf Project's aim was to transform the library into a vibrant, plant-filled space that enhances patron well-being. This talk will discuss how this project came to be and the details surrounding the Adopt-A-Plant Program where students volunteer to take care of the library plants."
 
       - ltitle: Connecting the Tufts community with the Libraries Open Journal Publishing Service 
       - lpresenter: Andrea Schuler, Tisch Library
+      - ldesc: 'My lightning talk will introduce our new-ish Open Journal Publishing Service to a wider Libraries audience, and get input from the audience about how to reach members of the Tufts community who might use the service.'
 - title: 'Lightning talk'
   description: ''
   type: 'lightning talks'
@@ -73,12 +81,15 @@
   ltalks: 
       - ltitle: "EN3: Information Literacy Instruction for All First-Year Engineering Students"
       - lpresenter:  "David Fristrom, Tisch Library"
+      - ldesc: 'Description of library involvement in new EN3: Foundations for Engineering Success course that all first-year engineering students will take starting this fall.'
 
       - ltitle: "Innovation and 'Practical Foresight':Highlights from Two Workshops"
       - lpresenter: "Martha Kelehan, Tisch library" 
+      - ldesc: 'Takeaways from two conferences I attended on "practical foresight" and "unlocking innovation" in libraries.'
 
       - ltitle: "DDS & CEEO pilot: Bringing engineering literacies to A&S"
       - lpresenter: Miles Donovan, Kylie Burnham, Tisch Library
+      - ldesc: 'The Digital Design Studio(DDS) will share highlights from a pilot program between the DDS and the Center for Engineering Education Outreach (CEEO).'
 - title: "Eliminating TARCs Backlog Reflections on a 'Sprint' Approach to Archival Processing"
   description: "In Summer 2025, TARC completed a major processing project to eliminate our backlog of physical accessions that had developed in during the pandemic, and we would love to share our insights and resuilts"
   type: presentation
