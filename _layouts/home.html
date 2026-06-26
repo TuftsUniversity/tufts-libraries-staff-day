@@ -32,7 +32,17 @@ tufts:MS036.001.009.00001.03465. Tufts Archival Research Center</figcaption>
     <div class="rheader">Room # {{site.data.rooms.main_room}}</div>
     {% for sc in site.data.sched %}
      <h3>{{ sc.time}}</h3> 
-     <p>{{ sc.description }}</p>
+     <p>
+     
+     <p>
+       {% if sc.link %}
+          <a href={{sc.link}}>{{ sc.description }}</a>
+      {% else %}
+      {{ sc.description }}
+      {% endif %}
+    </p>
+     
+     
    {% endfor %}
   </div>
   <div class="map">

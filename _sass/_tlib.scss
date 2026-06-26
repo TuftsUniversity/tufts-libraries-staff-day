@@ -59,6 +59,10 @@ html, body{
     .full-schedule{
       text-align: center;
       padding: 1em 2em;
+      a, a:hover, a:visited{
+        color: black;
+        text-decoration: underline;
+      }
     }
     .map{
       h2{
