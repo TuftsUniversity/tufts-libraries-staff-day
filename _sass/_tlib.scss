@@ -51,7 +51,6 @@ html, body{
    align-items: center;
    justify-content: center;
     h2{
-      border-bottom: 1px solid black;
       text-align: center;
     }
      p{
@@ -111,7 +110,10 @@ figcaption{
 h1, h2, h3, h4, h5, h6{
   font-family: $header-serif;
 }
-
+.rheader{
+  color: #4f4f4f;
+  border-bottom: 1px solid black;
+}
 #talk-details{
    max-width: 1600px;
    margin-top: 5em;
@@ -132,6 +134,7 @@ h1, h2, h3, h4, h5, h6{
     .mobile-title{
       font-weight: bold;
       font-size: 1.5em;
+      margin-top: 2em;
     }
     .room{
       display: block;
@@ -156,7 +159,7 @@ h1, h2, h3, h4, h5, h6{
       padding-left: 1em;
       margin-right: 2em;
       h3{
-        border-bottom: 1px solid black;
+        //border-bottom: 1px solid black;
       }
     }
     th:nth-of-type(2){

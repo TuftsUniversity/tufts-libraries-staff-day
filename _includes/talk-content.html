@@ -2,7 +2,15 @@
   <div class="talk-class">
   <span class="type">{{ talk.type }}</span>
   <span class="time">{{ talk.time }}</span>
-  <span class="room"> Room {{ talk.room }} </span>
+  {% assign room_type = talk.room %}
+  {% case room_type %}
+    {% when "one" %}
+  <span class="room"> Room {{ site.data.rooms.first_room }} </span>
+   {% when "two" %}
+  <span class="room"> Room {{ site.data.rooms.second_room }} </span>
+   {% when "three" %}
+  <span class="room"> Room {{ site.data.rooms.third_room }} </span>
+  {% endcase %}
   {% if talk.type != 'lightning talks' %}
     <h4 class="title">{{ talk.title }}</h4>
   {% endif %}
